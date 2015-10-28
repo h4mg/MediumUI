@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -26,7 +27,7 @@
 
     <?php wp_nav_menu( array(
       'container' => false,
-      'theme_locations' => 'primary'
+      'theme_location' => 'primary'
     )); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->

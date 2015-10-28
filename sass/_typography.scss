@@ -1,15 +1,70 @@
 a {
-	color: #BA209B;
+	color: $medGreen;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: $hovGreen;
 	}
 }
 
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: $sans;
+	font-family: $serif;
+	font-size: 1rem;
+	color: $bodyText;
+}
+
+/* headings */
+
+//Post title
+h1{
+	font-family: $sans;
+	font-size: 4.8rem;
+	font-weight: 700;
+}
+
+//Subheading
+h2{
+	font-family: $serif;
+	font-size: 3rem;
+}
+
+//Pull Quote
+h3{
+	font-family: $sans;
+	font-size: 2.1rem;
+}
+
+//Attribution
+h4{
+	font-family: $sans;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+//Meta & Caption
+h5{
+	font-family: $sans;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+//Detail
+h6{
+	font-family: $sans;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+
+}
 /* paragraphs */
 
-p {
-	line-height: 1.5;
+p{
+	font-family: $serif;
+	font-size: 1.8rem;
 }
 
 /*blockquotes*/
