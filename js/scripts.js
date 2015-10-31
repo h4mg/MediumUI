@@ -1,3 +1,5 @@
 $(function(){
-	//your jQuery here
+	$("a").on("click", function() { 
+    $(".active").removeClass("active"); 
+	});
 });

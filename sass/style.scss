@@ -11,6 +11,7 @@
 @import 'variables';
 @import 'typography';
 @import 'grid';
+@import 'structure';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
@@ -31,18 +32,18 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	// max-width: 1200px;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	// float: left;
+	// width: 65%;
+	// margin-right: 5%;
 }
 
 .full {
-	width: 100%;
+	// width: 100%;
 }
 
 

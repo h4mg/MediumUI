@@ -1,18 +1,21 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="container2">
 
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          
 
           <div class="entry-meta">
+            <?php echo get_avatar( get_the_author_meta('user_email'), 36); ?>
             <?php hackeryou_posted_on(); ?>
           </div><!-- .entry-meta -->
 
+
+          <h1 class="entry-title"><?php the_title(); ?></h1>
           <div class="entry-content">
             <?php the_content(); ?>
             <?php wp_link_pages(array(
@@ -38,7 +41,7 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
+    <?php //get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

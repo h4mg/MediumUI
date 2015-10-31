@@ -1,11 +1,27 @@
 .sidebar {
-	width: 30%;
-	float: left;
+	// float: left;
+
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			list-style: none;
+		}
+	}
+}
+
+.sidebar{
+	.xoxo{
+		li#categories-2{
+			ul{
+				li.cat-item{
+					display: inline-block;
+					background:white;
+					padding: 5px 10px;
+					border-radius: 3px;
+					border: 1px solid $border
+				}
+			}
 		}
 	}
 }

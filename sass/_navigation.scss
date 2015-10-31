@@ -1,14 +1,58 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
-	li {
+
+header {
+
+	h3{
+		@include column(3);
+		padding-top: 24px;
 		display: inline;
-		margin-right: 10px;
-		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+	}
+	.menu {
+		@include column(14);
+		margin: 0;
+		padding: 0;
+		display: inline;
+
+		ul{
+			padding: 30px 20px 0 10px;
+			margin: 0 20px 0 0;
+
+		
+			li {
+				list-style: none;
+				display: inline-block;
+				margin-right: 20px;
+
+				&.current_page_item  a{
+					border-bottom: 2px rgba(0,0,0,0.8) solid;
+				}
+				a {
+					color: #333;
+					padding: 16px 0;
+					&:active{
+						border-bottom: 2px rgba(0,0,0,0.8) solid;
+					}
+				}
+			}
 		}
 	}
+	
+	form#searchform{
+		@include column(3);
+		display: inline;
+		
+		input[type="search"]{
+		height: 37px;
+		width: 146px;
+		display: inline-block;
+		padding-right: 15px;
+		padding-left: 36px;
+		border-radius: 999em;
+		margin-top: 15px;
+		margin-left: 15px;
+		border: 1px solid #999;
+		}
+		input[type="submit"]{
+		display: none;
+		}
+	}	
 }

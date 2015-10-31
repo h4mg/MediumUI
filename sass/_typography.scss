@@ -1,10 +1,4 @@
-a {
-	color: $medGreen;
-	text-decoration: none;
-	&:hover {
-		color: $hovGreen;
-	}
-}
+
 
 html{
 	font-size: 62.5%;
@@ -13,7 +7,7 @@ html{
 body{
 	font-family: $sans;
 	font-family: $serif;
-	font-size: 1rem;
+	font-size: 1.6rem;
 	color: $bodyText;
 }
 
@@ -53,13 +47,27 @@ h5{
 }
 
 //Detail
-h6{
+h6, header .menu li{
 	font-family: $sans;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: 700;
-	letter-spacing: 2px;
-
+	letter-spacing: 1px;
 }
+
+a {
+	color: $medGreen;
+	text-decoration: none;
+	&:hover {
+		color: $hovGreen;
+	}
+}
+
+// navigation
+ header .menu li{
+	text-transform: uppercase;
+}
+
+
 /* paragraphs */
 
 p{
@@ -104,6 +112,7 @@ dd {
 /*lists*/
 
 ul li, ol li {
+	list-style: none;
 	padding: 3px;
 }
 

@@ -9,7 +9,7 @@ $columns: 24;
 
 // Utility function — you should never need to modify this
 @function gridsystem-width($columns:$columns) {
-	@return ($column-width * $columns) + ($gutter-width * $columns);
+	@return ($column-width * $columns) + ($gutter-width * ($columns));
 }
 
 // Set $total-width to 100% for a fluid layout
