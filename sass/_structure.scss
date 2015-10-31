@@ -17,6 +17,12 @@ header {
 		@include push(3);
 		background: white;
 		padding-top: 65px;
+		
+		.content-active{
+			@include row(1);
+			@include column(18);
+		}
+
 	}
 
 	.sidebar{

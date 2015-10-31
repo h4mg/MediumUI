@@ -1,0 +1,22 @@
+// featured image
+
+section.entry-content{
+	height: 160px;
+	overflow: hidden;
+}
+
+img.attachment-feat-size{
+	max-width: 100%;
+	height: auto;
+}
+
+// author img
+
+div.entry-meta>img{
+	border-radius: 999em;
+}
+
+article.type-post{
+	padding: 40px 0;
+	border-bottom: solid 1px $border;
+}

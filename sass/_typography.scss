@@ -22,14 +22,21 @@ h1{
 
 //Subheading
 h2{
-	font-family: $serif;
+	font-family: $sans;
 	font-size: 3rem;
+	letter-spacing: -1px;
+	&>a{
+		color: $bodyText;
+	}
 }
 
 //Pull Quote
 h3{
 	font-family: $sans;
 	font-size: 2.1rem;
+	&>a{
+		color: $bodyText;
+	}
 }
 
 //Attribution
@@ -72,7 +79,8 @@ a {
 
 p{
 	font-family: $serif;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 
 /*blockquotes*/

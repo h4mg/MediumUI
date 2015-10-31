@@ -199,12 +199,12 @@ function hackeryou_posted_on() {
 	printf('<span class="%1$s"></span> %2$s <span class="meta-sep"></span> %3$s',
 		'meta-prep meta-prep-author',
 		
-		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
+		sprintf( '<p class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></p>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
 			sprintf( esc_attr( 'View all posts by %s'), get_the_author() ),
 			get_the_author()
 		),
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
+		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><p class="entry-date">%3$s</p></a>',
 			get_permalink(),
 			esc_attr( get_the_time() ),
 			get_the_date('M j, Y')
@@ -212,6 +212,7 @@ function hackeryou_posted_on() {
 	);
 }
 endif;
+
 
 if ( ! function_exists( 'hackeryou_posted_in' ) ) :
 /**

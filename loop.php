@@ -27,14 +27,21 @@
         </a>
       </h2>
 
-			<section class="entry-content">
-				<?php the_post_thumbnail( 'feat-size' ); ?> 
+			
+				<?php if ( has_post_thumbnail() ) :?>
+					<section class="entry-content">
+					<!-- // check if the post has a Post Thumbnail assigned to it.-->
+	 					<?php the_post_thumbnail('feat-size'); ?>
+					</section><!-- .entry-content -->
+				<?php endif;?>
+				<section class="entry-content-para">
 				<?php the_excerpt('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+				</section><!-- .entry-content-para-->
 				<?php wp_link_pages( array(
           'before' => '<div class="page-link"> Pages:',
           'after' => '</div>'
         )); ?>
-			</section><!-- .entry-content -->
+			
 
 			
 
