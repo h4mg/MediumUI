@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
 	<ul class="xoxo">
 		<?php  dynamic_sidebar( 'primary-widget-area' ); ?>
 	</ul>

@@ -17,6 +17,7 @@ header {
 		@include push(3);
 		background: white;
 		padding-top: 65px;
+
 		
 		.content-active{
 			@include row(1);
@@ -29,7 +30,7 @@ header {
 		@include column(7);
 		background: $sideBg;
 		border-left: 1px solid $border;
-		position: absolute;
+		position: fixed;
 		padding-top: 65px;
 		z-index: 1000;
 		overflow: scroll;
@@ -39,10 +40,11 @@ header {
 .container2{
 	position: relative;
 
-	.content{
+	.content2{
 		@include column(14);
 		@include push(5);
 		background: white;
-		padding-top: 65px;
+		padding-top: 20px;
+		position: relative;
 	}
 }

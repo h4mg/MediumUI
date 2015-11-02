@@ -37,6 +37,7 @@
 				<section class="entry-content-para">
 				<?php the_excerpt('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				</section><!-- .entry-content-para-->
+
 				<?php wp_link_pages( array(
           'before' => '<div class="page-link"> Pages:',
           'after' => '</div>'

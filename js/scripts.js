@@ -1,5 +1,3 @@
-$(function(){
-	$("a").on("click", function() { 
-    $(".active").removeClass("active"); 
-	});
+$(function() {
+	$.stickysidebarscroll("#sidebar",{offset: {top: 10, bottom: 200}});
 });

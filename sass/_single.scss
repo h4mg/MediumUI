@@ -1,0 +1,57 @@
+.featuredImg{
+	width: 100vw;
+	height: 75vh;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.posting{
+	p{
+		font-size: 1.8rem;
+	}
+
+	blockquote{
+		font-style: italic;
+		border-left: 2px solid $medGreen
+
+	}
+
+	h2{
+		display: block;
+		font-weight: 300;
+		color: #999;
+	}
+
+	h3{
+		display: block;
+		font-weight: 400;
+	}
+
+	ol{
+		display: block;
+		list-style: decimal;
+		li{
+			padding: 1rem;
+			border-bottom: 1px dotted $border;
+		}
+	}
+
+	ul{
+		display: block;
+		list-style: square;
+		margin: 3rem 0;
+
+		li{
+			// display: block;
+			padding: 1rem;
+			border-bottom: 1px dotted $grey;
+		}
+	}
+
+	img{
+		margin: 2rem;
+	}
+}

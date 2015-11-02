@@ -172,9 +172,9 @@ function hackeryou_widgets_init() {
 		'id' => 'primary-widget-area',
 		'description' => 'The primary widget area',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'after_widget' => '</li><div>',
+		'before_title' => '<div class ="bordered"><h6 class="widget-title">',
+		'after_title' => '</h6>',
 	) );
 
 }
@@ -199,12 +199,12 @@ function hackeryou_posted_on() {
 	printf('<span class="%1$s"></span> %2$s <span class="meta-sep"></span> %3$s',
 		'meta-prep meta-prep-author',
 		
-		sprintf( '<p class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></p>',
+		sprintf( '<h4 class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></h4>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
 			sprintf( esc_attr( 'View all posts by %s'), get_the_author() ),
 			get_the_author()
 		),
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><p class="entry-date">%3$s</p></a>',
+		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><h5 class="entry-date">%3$s</h5></a>',
 			get_permalink(),
 			esc_attr( get_the_time() ),
 			get_the_date('M j, Y')
@@ -281,4 +281,14 @@ function get_post_parent($post) {
 	}
 }
 
+// change excerpt text
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( '<span>...</span><h4>Read more</h4>', 'your-text-domain' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
 show_admin_bar( false );
+
+
+
+

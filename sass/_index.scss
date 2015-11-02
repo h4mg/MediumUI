@@ -10,13 +10,26 @@ img.attachment-feat-size{
 	height: auto;
 }
 
-// author img
-
-div.entry-meta>img{
-	border-radius: 999em;
+article.type-post{
+	padding: 20px 0;
+	border-bottom: solid 1px $border;
 }
 
-article.type-post{
-	padding: 40px 0;
-	border-bottom: solid 1px $border;
+// author img, name and date
+
+div.entry-meta>img, div.entry-meta-single>img,{
+	border-radius: 999em;
+	float: left;
+	margin-right: 1.5rem;
+}
+
+h4.author{
+	font-weight: 300;
+	margin-bottom: .5rem;
+
+}
+
+h5.entry-date{
+	font-weight: 300;
+	margin-top: .5rem;
 }

@@ -25,6 +25,7 @@ h2{
 	font-family: $sans;
 	font-size: 3rem;
 	letter-spacing: -1px;
+	font-weight: 700;
 	&>a{
 		color: $bodyText;
 	}
@@ -42,15 +43,16 @@ h3{
 //Attribution
 h4{
 	font-family: $sans;
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 1.6rem;
+	font-weight: 400;
 }
 
 //Meta & Caption
 h5{
 	font-family: $sans;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 400;
+	color: #999;
 }
 
 //Detail
@@ -59,6 +61,7 @@ h6, header .menu li{
 	font-size: 1.1rem;
 	font-weight: 700;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 a {
@@ -80,7 +83,7 @@ a {
 p{
 	font-family: $serif;
 	font-size: 1.6rem;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 /*blockquotes*/
@@ -119,8 +122,8 @@ dd {
 
 /*lists*/
 
-ul li, ol li {
-	list-style: none;
+ul li {
+	// list-style: none;
 	padding: 3px;
 }
 
